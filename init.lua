@@ -37,3 +37,15 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- local enable_providers = {
+--       "python3_provider",
+--       -- and so on
+--     }
+--
+--     for _, plugin in pairs(enable_providers) do
+--       vim.g["loaded_" .. plugin] = nil
+--       vim.cmd("runtime " .. plugin)
+--     end
+--
+vim.lsp.set_log_level('debug')
